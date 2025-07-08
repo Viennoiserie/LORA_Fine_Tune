@@ -1,5 +1,6 @@
 
-# Diffusion-Based Image Generation Pipeline (Stable Diffusion XL + LoRA)
+# Diffusion-Based Image Generation Pipeline 
+(Stable Diffusion XL + LoRA)
 
 This repository provides a full pipeline for fine-tuning and generating images using **Stable Diffusion XL** with **LoRA adapters**, combined with manual prompting workflows.
 
