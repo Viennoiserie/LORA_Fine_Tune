@@ -42,13 +42,13 @@ Launch scripts (Windows `.bat` and Linux `.sh`) for LoRA fine-tuning using `acce
 Manually creates text-image prompt pairs from a folder of images.
 
 **Steps:**
-- Loads images from `../NSFW_Dataset`
+- Loads images from `../YOUR_DATASET`
 - Displays one image at a time
 - User inputs a description for each image
 - Saves results in `manual_prompts.parquet`
 
 ```bash
-Output: ../NSFW_Dataset/manual_prompts.parquet
+Output: ../YOUR_DATASET/manual_prompts.parquet
 ```
 
 ---
