@@ -26,7 +26,7 @@ cd diffusers
 pip install -e .
 
 # Step 2: Install dependencies
-cd ..
+cd ../
 pip install -r requirements.txt
 
 # Step 3: Authenticate
@@ -37,7 +37,8 @@ wandb login  # optional if using W&B
 accelerate config default
 
 # Step 5: Run training
-bash lora_training.sh
+cd Scripts
+bash training_script.sh
 ```
 
 ---
