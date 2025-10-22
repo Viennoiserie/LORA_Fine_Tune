@@ -1,0 +1,25 @@
+accelerate launch lora_sdxl_training.py \
+  --pretrained_model_name_or_path="Viennoiserie/Pony_V3" \
+  --pretrained_vae_model_name_or_path="madebyollin/sdxl-vae-fp16-fix" \
+  --dataset_name="Viennoiserie/Suzie_Training_Dataset" \
+  --output_dir="./output_suzie_v2" \
+  --resolution=1024 \
+  --random_flip \
+  --train_batch_size=1 \
+  --gradient_accumulation_steps=4 \
+  --learning_rate=1e-5 \
+  --lr_scheduler="cosine_with_restarts" \
+  --lr_warmup_steps=100 \
+  --num_train_epochs=8 \
+  --max_train_steps=1200 \
+  --mixed_precision="fp16" \
+  --checkpointing_steps=200 \
+  --train_text_encoder \
+  --snr_gamma=5.0 \
+  --rank=16 \
+  --validation_prompt="SUZIE close-up portrait, natural light, soft smile, 85mm lens" \
+  --validation_epochs=1 \
+  --num_validation_images=4 \
+  --allow_tf32 \
+  --push_to_hub \
+  --hub_model_id="SUZIE_MODEL_V2"
